@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-splash-bio',
+  selector: 'splash-bio',
   templateUrl: './splash-bio.component.html',
   styleUrls: ['./splash-bio.component.scss']
 })
