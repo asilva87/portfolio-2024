@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { GenerateProbabilityService } from './services/generate-probability/generate-probability.service';
 
 @Component({
 	selector: 'root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
 	styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-	title = 'ae'
+    public splashScreenVersion!: number
+
+    constructor (private generateProbabiltyService: GenerateProbabilityService) {
+        this.splashScreenVersion = generateProbabiltyService.getRandomNumber()
+
+        console.log(this.splashScreenVersion)
+    }
 }

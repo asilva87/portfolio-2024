@@ -1,3 +1,11 @@
 <router-outlet>
-    <splash-letter></splash-letter>
+    <div [ngSwitch]="splashScreenVersion">
+        <div *ngSwitchCase="0">
+            <splash-letter></splash-letter>
+        </div>
+
+        <div *ngSwitchCase="1">
+            <splash-bio></splash-bio>
+        </div>
+    </div>
 </router-outlet>
