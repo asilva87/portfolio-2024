@@ -7,6 +7,4 @@ import { Component } from '@angular/core';
 })
 export class SplashLetterComponent {
     public title = 'André Silva - Portfolio 2024'
-
-
 }
