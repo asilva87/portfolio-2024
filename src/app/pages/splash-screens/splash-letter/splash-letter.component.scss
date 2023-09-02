@@ -12,8 +12,9 @@
             top: 10vh;
             font-size: 70vh;
             color: #c70827;
-            transform: translateX(40%); /* Translate it to the right */
+            transform: translateX(45%); /* Translate it to the right */
             font-weight: bolder;
+            font-family: 'Asap';
         }
     }
 
@@ -51,7 +52,8 @@
             cursor: pointer;
             color: white;
             font-weight: bold;
-            font-size: 2vh;
+            font-size: 3vh;
+            font-family: 'Asap';
 
             &:hover {
                 background-color: #ee687e;
