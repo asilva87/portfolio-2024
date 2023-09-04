@@ -1,1 +1,9 @@
-<p>splash-bio works!</p>
+<div class="bio">
+    <div class="bio__box">
+        <span class="bio__box__row" *ngFor="let letter of bio; let i = index">
+            <span  class="bio__box__row__letter">
+                {{ letter }}
+            </span>
+        </span>
+    </div>
+</div>
