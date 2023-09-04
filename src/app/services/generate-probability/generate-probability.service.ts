@@ -7,7 +7,11 @@ export class GenerateProbabilityService {
 
     constructor() { }
 
-    getRandomNumber(): number {
-        return Math.floor(Math.random() * 2); // Generates either 0 or 1
+    getRandomNumber(max: number, min?: number): number {
+        if (!min) {
+            return Math.floor(Math.random() * max)
+        } else {
+            return Math.floor(Math.random() * (max - min + 1) + min)
+        }
     }
 }
