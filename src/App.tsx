@@ -3,7 +3,7 @@ import './App.css'
 
 function App() {
   return (
-    <div>
+    <>
         <div className="upper-bar"></div>
         <div className="vertical-bar"></div>
         <div className="my-name">
@@ -16,7 +16,41 @@ function App() {
                 If you're intered in my work, please visit my GitHub repository, as well as my LinkedIn profile. (Yes, this website is focused on style first before legibility).
             </p>
         </div>
-    </div>
+        <div className="content">
+            <div className="content__header__wrapper">
+                <div className="content__header">
+                    Articles:
+                </div>
+            </div>
+
+            <div className="content__item">
+                <div className="content__item__date">
+                    01.01.24
+                </div>
+                <div className="content__item__title">
+                    Some article 1
+                </div>
+            </div>
+
+            <div className="content__item">
+                <div className="content__item__date">
+                    01.01.24
+                </div>
+                <div className="content__item__title">
+                    Some article 2
+                </div>
+            </div>
+
+            <div className="content__item">
+                <div className="content__item__date">
+                    01.01.24
+                </div>
+                <div className="content__item__title">
+                    Some article 3
+                </div>
+            </div>
+        </div>
+    </>
   )
 }
 
