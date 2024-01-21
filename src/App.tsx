@@ -1,10 +1,13 @@
 // import { useState } from 'react'
 import './App.css'
+import Collapsible from 'react-collapsible'
 
 function App() {
   return (
     <>
-        <div className="upper-bar"></div>
+        <div className="upper-bar">
+            Home
+        </div>
         <div className="vertical-bar"></div>
         <div className="my-name">
             <div className="version">1.0.0</div>
@@ -23,32 +26,34 @@ function App() {
                 </div>
             </div>
 
-            <div className="content__item">
-                <div className="content__item__date">
-                    01.01.24
+            <Collapsible trigger="Collapsible test" transitionTime={200} open={true}>
+                <div className="content__item">
+                    <div className="content__item__date">
+                        01.01.24
+                    </div>
+                    <div className="content__item__title">
+                        Some article 1
+                    </div>
                 </div>
-                <div className="content__item__title">
-                    Some article 1
-                </div>
-            </div>
 
-            <div className="content__item">
-                <div className="content__item__date">
-                    01.01.24
+                <div className="content__item">
+                    <div className="content__item__date">
+                        01.01.24
+                    </div>
+                    <div className="content__item__title">
+                        Some article 2
+                    </div>
                 </div>
-                <div className="content__item__title">
-                    Some article 2
-                </div>
-            </div>
 
-            <div className="content__item">
-                <div className="content__item__date">
-                    01.01.24
+                <div className="content__item">
+                    <div className="content__item__date">
+                        01.01.24
+                    </div>
+                    <div className="content__item__title">
+                        Some article 3
+                    </div>
                 </div>
-                <div className="content__item__title">
-                    Some article 3
-                </div>
-            </div>
+            </Collapsible>
         </div>
     </>
   )
