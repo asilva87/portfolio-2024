@@ -10,7 +10,7 @@ function App() {
         </div>
         <div className="vertical-bar"></div>
         <div className="my-name">
-            <div className="version">1.0.0</div>
+            <div className="version">v1.0.0</div>
             André Silva
         </div>
         <div className="description">
@@ -20,13 +20,8 @@ function App() {
             </p>
         </div>
         <div className="content">
-            <div className="content__header__wrapper">
-                <div className="content__header">
-                    Articles:
-                </div>
-            </div>
-
-            <Collapsible trigger="Collapsible test" transitionTime={200} open={true}>
+            {/* Add state and functional arrow */}
+            <Collapsible trigger="Articles:" transitionTime={200} open={true}>
                 <div className="content__item">
                     <div className="content__item__date">
                         01.01.24
