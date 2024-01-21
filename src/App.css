@@ -1,3 +1,9 @@
+:root {
+    --black: #4c4c47;
+    --red: #ff5e5b;
+    --beige: #f7f7f2
+}
+
 #root {
   max-width: 600px;
   margin: 0 auto;
@@ -8,8 +14,8 @@
     width: 60vw;
     max-width: 250px;
     height: 2rem;
-    background-color: #444545;
-    color: #f8efde;
+    background-color: var(--black);
+    color: var(--beige);
     display: flex;
     align-items: center;
     padding-left: 2.5rem;
@@ -23,7 +29,7 @@
     position: absolute;
     left: 4rem;
     top: 0;
-    background-color: #db504a;
+    background-color: var(--red);
 }
 
 .version {
@@ -32,13 +38,16 @@
     transform: rotate(270deg);
     font-size: 1rem;
     letter-spacing: .1rem;
-    color: #444545;
+    color: var(--black);
+    background-color: var(--red);
+    padding: .3rem .3rem .3rem 4rem;
+    text-transform: lowercase;
 }
 
 .my-name {
     text-transform: uppercase;
     font-size: 2rem;
-    color: #db504a;
+    color: var(--red);
     font-weight: 950;
     letter-spacing: .2rem;
     margin-top: .2rem;
@@ -46,31 +55,32 @@
 }
 
 .description {
-    color: #db504a;
-    font-size: .5rem;
+    color: var(--red);
+    font-size: .6rem;
     width: 15rem;
     font-weight: bold;
-    border-left: solid 1px #444545;
+    border-left: solid 2px var(--black);
     padding-left: .5rem;
 }
 
 .content {
     margin-top: 3rem;
-    background-color: #f8efde;
+    background-color: var(--beige);
     border-bottom-style: solid;
     border-bottom-width: .35rem;
+    border-bottom-color: var(--black);
     max-width: 500px;
 }
 
-.content__header__wrapper {
-    border-color: #db504a;
+/* .content__header__wrapper {
+    border-color: var(--red);
     border-style: solid;
     border-width: 1px 1px 0 1px;
-}
+} */
 
-.content__header {
+.Collapsible__trigger {
     position: relative;
-    background-color: #db504a;
+    background-color: var(--red);
     font-size: 1.5rem;
     color: white;
     width: fit-content;
@@ -79,7 +89,7 @@
 }
 
 .content__item {
-    color: #444545;
+    color: var(--black);
     display: flex;
     padding: .3rem;
     border-style: solid;
@@ -92,8 +102,8 @@
 }
 
 .content__item__date {
-    background-color: #db504a;
-    color: #444545;
+    background-color: var(--red);
+    color: var(--black);
     padding: .5rem;
 }
 
