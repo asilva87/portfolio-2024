@@ -18,6 +18,7 @@ the screen the bar won't travel around and will stay fixed. */
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    height: 100vh;
 }
 
 .upper-bar {
@@ -119,4 +120,15 @@ the screen the bar won't travel around and will stay fixed. */
 
 .content__item__title {
     padding: .5rem;
+}
+
+.headache {
+    position: absolute;
+    bottom: 5rem;
+    right: 0px;
+    color: var(--beige);
+}
+
+.headache:hover {
+    cursor: pointer;
 }
