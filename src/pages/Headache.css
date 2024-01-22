@@ -1,0 +1,45 @@
+.headache__wrapper {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.headache__circle {
+    height: 40vw;
+    width: 40vw;
+    background-color: var(--beige);
+    border-radius: 50%;
+}
+
+.headache__msg {
+    color: var(--beige);
+    position: absolute;
+    transform: rotate(-45deg);
+    font-size: 2vw;
+    background-color: var(--black);
+}
+
+.headache__msg p {
+    margin: .5rem;
+}
+
+.headache__goback {
+    position: absolute;
+    top: 50vh;
+    left: 60vw;
+    font-size: 2vw;
+    color: var(--red);
+    background-color: var(--black);
+    padding: .75rem .4rem .1rem .85rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.headache__goback:hover {
+    cursor: pointer;
+}
