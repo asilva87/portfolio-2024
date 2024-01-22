@@ -5,9 +5,19 @@
 }
 
 #root {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
   padding: 2rem;
+}
+
+/* super-parent is relative, so that upper-bar, being absolute,
+can be absolute relative to its parent and not html. When resizing
+the screen the bar won't travel around and will stay fixed. */
+.super-parent {
+    max-width: 1024px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .upper-bar {
@@ -23,18 +33,19 @@
     font-size: .75rem;
 }
 
+/* absolute to its parent, super-parent */
 .vertical-bar {
     width: .5rem;
     height: 5.5rem;
     position: absolute;
-    left: 4rem;
-    top: 0;
+    left: 1.2rem;
+    top: -2.5rem;
     background-color: var(--red);
 }
 
 .version {
     position: absolute;
-    right: 1rem;
+    right: -2.8rem;
     transform: rotate(270deg);
     font-size: 1rem;
     letter-spacing: .1rem;
@@ -50,14 +61,14 @@
     color: var(--red);
     font-weight: 950;
     letter-spacing: .2rem;
-    margin-top: .2rem;
+    margin-top: -.2rem;
     margin-left: 2.5rem;
 }
 
 .description {
     color: var(--red);
-    font-size: .6rem;
-    width: 15rem;
+    font-size: .7rem;
+    width: 20rem;
     font-weight: bold;
     border-left: solid 2px var(--black);
     padding-left: .5rem;
@@ -69,7 +80,6 @@
     border-bottom-style: solid;
     border-bottom-width: .35rem;
     border-bottom-color: var(--black);
-    max-width: 500px;
 }
 
 /* .content__header__wrapper {

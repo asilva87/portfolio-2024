@@ -4,7 +4,7 @@ import Collapsible from 'react-collapsible'
 
 function App() {
   return (
-    <>
+    <div className="super-parent">
         <div className="upper-bar">
             Home
         </div>
@@ -50,7 +50,7 @@ function App() {
                 </div>
             </Collapsible>
         </div>
-    </>
+    </div>
   )
 }
 
