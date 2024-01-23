@@ -4,15 +4,11 @@ the screen the bar won't travel around and will stay fixed. */
 .super-parent {
     max-width: 1024px;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
     height: 100vh;
-    width: 100%;
-    padding: 2rem;
-    padding-top: 10vh;
+    width: 100vw;
 }
 
-.upper-bar {
+/* .upper-bar {
     width: 60vw;
     max-width: 250px;
     height: 2rem;
@@ -24,17 +20,17 @@ the screen the bar won't travel around and will stay fixed. */
     text-transform: uppercase;
     font-size: .75rem;
     margin: 0 2rem;
-}
+} */
 
 /* absolute to its parent, super-parent */
-.vertical-bar {
+/* .vertical-bar {
     width: .5rem;
     height: 5.5rem;
     position: absolute;
     left: 3rem;
     top: -.5rem;
     background-color: var(--red);
-}
+} */
 
 .version {
     position: absolute;
@@ -46,18 +42,23 @@ the screen the bar won't travel around and will stay fixed. */
     background-color: var(--red);
     padding: .3rem .3rem .3rem 4rem;
     text-transform: lowercase;
+    font-weight: bold;
 }
 
 .my-name {
     text-transform: uppercase;
     font-size: 4rem;
-    color: var(--black);
+    color: var(--beige);
     font-weight: 950;
     letter-spacing: .2rem;
     margin: 0 2rem;
+    background-color: var(--black);
+    width: fit-content;
+    padding: 1rem 1rem 4rem 1rem;
+    border-bottom: solid 1rem var(--red);
 }
 
-.description {
+.introduction {
     color: var(--beige);
     font-size: .7rem;
     width: 50vw;
@@ -65,26 +66,25 @@ the screen the bar won't travel around and will stay fixed. */
     border-left: solid 1rem var(--black);
     padding: .1rem 1rem;
     background-color: var(--red);
-    margin: 1rem 2rem;
+    margin: 3rem 2rem;
 }
 
-@media screen and (max-width: 400px) {
-    .description {
-        width: 80vw;
+@media screen and (max-width: 510px) {
+    .introduction {
+        width: 60vw;
     }
 
     .my-name {
         font-size: 2.5rem;
-        width: 260px;
     }
 }
 
 .content {
-    margin: 5rem 2rem;
-    background-color: var(--beige);
-    border-bottom-style: solid;
+    margin: 5rem;
+    /* background-color: var(--beige); */
+    /* border-bottom-style: solid;
     border-bottom-width: .35rem;
-    border-bottom-color: var(--black);
+    border-bottom-color: var(--black); */
 }
 
 /* .content__header__wrapper {
@@ -96,20 +96,28 @@ the screen the bar won't travel around and will stay fixed. */
 .Collapsible__trigger {
     position: relative;
     font-size: 2rem;
-    color: var(--red);
-    width: fit-content;
+    color: var(--black);
     padding: .5rem .2rem 0 .5rem;
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 800;
 }
 
 .content__item {
-    color: var(--black);
+    color: var(--red);
     font-size: 2rem;
     display: flex;
     /* padding: .3rem; */
-    border-style: solid;
-    border-width: .5rem 0 0 0;
+    padding-left: 2rem;
+    max-height: 3rem;
+    margin-bottom: -.25rem;
+}
+
+.content__item__divider {
+    height: .3rem;
+    max-width: 300px;
+    border-top: solid .2rem var(--red);
+    border-left: solid .2rem var(--red);
+    margin-bottom: .5rem;
 }
 
 .content__item:hover {
@@ -118,14 +126,39 @@ the screen the bar won't travel around and will stay fixed. */
 }
 
 .content__item__date {
-    /* background-color: var(--red); */
+    display: flex;
+    align-items: center;
+}
+
+.content__item__date p {
+    font-size: 1.2rem;
     color: var(--black);
-    /* padding: .5rem; */
-    border-right: solid 1rem var(--red);
+    background-color: var(--red);
+    padding: .1rem .2rem 0 .2rem;
 }
 
 .content__item__title {
-    /* padding: .5rem; */
+    padding-left: 2rem;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    text-overflow: nowrap;
+}
+
+.content__item__title__first-letter {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 2.5rem;
+    /* color: var(--black); */
+}
+
+@media screen and (max-width: 510px) {
+    .content {
+        margin: 3rem 2rem;
+    }
+
+    .content__item__title {
+        font-size: 1.5rem;
+    }
 }
 
 .headache {
@@ -137,4 +170,29 @@ the screen the bar won't travel around and will stay fixed. */
 
 .headache:hover {
     cursor: pointer;
+}
+
+.diagon-alley_1 {
+    background-color: var(--black);
+    height: 1rem;
+    width: 50rem;
+    transform: rotate(105deg);
+    margin-left: -20rem;
+    margin-top: 5rem;
+    position: absolute;
+    /* z-index: -1; */
+    mix-blend-mode:saturation;
+}
+
+.diagon-alley_2 {
+    background-color: var(--black);
+    height: 1rem;
+    width: 100rem;
+    transform: rotate(65deg);
+    margin-left: -30%;
+    margin-top: -30vw;
+    position: absolute;
+    z-index: 10;
+    mix-blend-mode:saturation;
+    left: 5;
 }
