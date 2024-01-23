@@ -4,10 +4,11 @@ import { Link } from "react-router-dom"
 export function Home() {
     return (
         <div className="super-parent">
-            <div className="upper-bar">
+            <div className="upper-bar"></div>
+            {/* <div className="upper-bar">
                 Home
             </div>
-            <div className="vertical-bar"></div>
+            <div className="vertical-bar"></div> */}
             <div className="my-name">
                 <div className="version">v1.0.0</div>
                 André Silva
@@ -15,7 +16,7 @@ export function Home() {
             <div className="description">
                 <p>
                     This is my portfolio and hobby website for 2024. Here, I will be posting articles about React (and possibly Angular), as well as various apps with whatever comes to my mind.
-                    If you're intered in my work, please visit my GitHub repository, as well as my LinkedIn profile. (Yes, this website is focused on style first before legibility).
+                    If you're intered in my work, please visit my GitHub repository, as well as my LinkedIn profile. This website is responsive between 270px and 1024px.
                 </p>
             </div>
             <div className="content">
