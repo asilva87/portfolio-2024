@@ -1,11 +1,14 @@
 .headache__wrapper {
     height: 100vh;
     width: 100vw;
+    /* max-width: 1024px; */
     background-color: var(--red);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    margin-left: auto;
+    margin-right: auto      ;
 }
 
 .headache__circle {
@@ -34,7 +37,7 @@
     font-size: 2vw;
     color: var(--red);
     background-color: var(--black);
-    padding: .75rem .4rem .1rem .85rem;
+    padding: .75rem .4rem .5rem .85rem;
     line-height: 1rem;
     text-transform: uppercase;
     font-weight: bold;
@@ -42,4 +45,15 @@
 
 .headache__goback:hover {
     cursor: pointer;
+}
+
+@media screen and (min-width: 1388px) {
+    .headache__msg p, .headache__goback {
+        font-size: 28px;
+    }
+
+    .headache__circle {
+        height: 555px;
+        width: 555px;
+    }
 }
