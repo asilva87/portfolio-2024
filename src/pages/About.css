@@ -1,0 +1,36 @@
+.about__wrapper {
+    background-color: var(--beige);
+    height: 100vh;
+    width: 100vw;
+    /* max-width: 1024px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--black);
+}
+
+/* the alphabet won't wrap because it's not a word, but a bunch of divs */
+.about__alphabet {
+    display: flex;
+    width: 30vw;
+    justify-content: center;
+    font-size: 4rem;
+    letter-spacing: .2rem;
+    flex-direction: column;
+}
+
+.about__alphabet--special-letter {
+    color: var(--red);
+    margin: .1rem;
+    padding-left: .2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5rem;
+    /* align-items: center; */
+}
