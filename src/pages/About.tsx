@@ -17,6 +17,17 @@ export function About() {
                     </div>
                 ))}
             </div>
+
+            <div className="about__description__wrapper">
+                <div className="about__name">
+                    <p>Andre Silva</p>
+                </div>
+                <div className="about__description">
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, <span style={{ fontSize: '1.2rem', color: 'red'}}>nemo quae magnam</span> pariatur accusamus sint, recusandae unde a voluptate, deleniti blanditiis ducimus repellat in reprehenderit delectus alias iusto deserunt doloribus.</p>
+                </div>
+            </div>
+
+            {/* add / to go back home */}
         </div>
     )
 }
