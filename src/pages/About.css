@@ -51,14 +51,25 @@
 }
 
 .about__name {
-    display: flex;
-    align-items: end;
-    padding-right: 1rem;
+    display: relative;
+    align-items: center;
+    padding-right: 2rem;
+    text-align: center;
 }
 
-.about__name p {
-    font-size: 1.5rem;
+.about__name__initials {
+    font-size: 8rem;
     margin: 0;
     font-weight: bold;
+    /* font-family: 'Yrsa', 'Times New Roman', Times, serif; */
+    letter-spacing: 1px;
+    /* line-height: 1.5rem; */
+    color: var(--red);
 }
 
+.about__name__surname {
+    position: absolute;
+    right: 1rem;
+}
+
+/* Wrapper the above class with the initials */

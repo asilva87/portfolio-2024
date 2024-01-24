@@ -20,10 +20,11 @@ export function About() {
 
             <div className="about__description__wrapper">
                 <div className="about__name">
-                    <p>Andre Silva</p>
+                    <p className="about__name__initials">AB</p>
+                    <p className="about__name__surname">Silva</p>
                 </div>
                 <div className="about__description">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, <span style={{ fontSize: '1.2rem', color: 'red'}}>nemo quae magnam</span> pariatur accusamus sint, recusandae unde a voluptate, deleniti blanditiis ducimus repellat in reprehenderit delectus alias iusto deserunt doloribus.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam, <span style={{ fontSize: '1.3rem', color: 'red'}}>nemo quae magnam</span> pariatur accusamus sint, recusandae unde a voluptate, deleniti blanditiis ducimus repellat in reprehenderit delectus alias iusto deserunt doloribus.</p>
                 </div>
             </div>
 
