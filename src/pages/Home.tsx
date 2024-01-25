@@ -23,6 +23,7 @@ export function Home() {
                 <div className="content">
                     {/* Add state and functional arrow */}
                     <Collapsible trigger="Articles:" transitionTime={200} open={true}>
+                        {/* TODO: Make a list component */}
                         <div className="content__item">
                             <div className="content__item__date">
                                 <p>01.01.2024</p>
